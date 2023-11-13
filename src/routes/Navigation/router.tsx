@@ -2,6 +2,7 @@ export const router = [
   {
     name: 'HOME',
     id: 'home',
+    offset: -60,
     Delimeter: () => <hr className="border-yellow w-1/3 border-4" />,
   },
   {

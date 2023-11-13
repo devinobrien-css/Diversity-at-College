@@ -7,7 +7,6 @@ import { Navbar } from './Navigation/Navbar';
 import { People } from './People';
 import { Reviews } from './Reviews';
 import { Subscribe } from './Subscribe';
-import { Link } from 'react-scroll';
 
 export const Root = () => {
   return (

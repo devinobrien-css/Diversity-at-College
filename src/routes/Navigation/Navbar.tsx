@@ -22,8 +22,7 @@ export const Navbar = () => {
       id="navbar"
     >
       <div className="flex w-full justify-between">
-        <DiversitySvg className="py-2 md:w-1/3" />
-
+        <DiversitySvg className="w-full border py-2 md:w-1/3" />
         <div className="font-nunito hidden gap-x-6 md:flex">
           {router.map((tab) => {
             const { id, name, ...rest } = tab;
