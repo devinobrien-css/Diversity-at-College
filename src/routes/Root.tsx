@@ -1,4 +1,3 @@
-import { Icon } from '@iconify/react';
 import { Ads } from './Ads';
 import { Book } from './Book';
 import { Contact } from './Contact';
@@ -17,19 +16,11 @@ export const Root = () => {
       <Book />
       <Ads />
       <Info />
-      {/* <Subscribe /> */}
-      {/* <People /> */}
-      {/* <Reviews /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Subscribe />
+      <People />
+      <Reviews />
+      <Contact />
+      <Footer />
     </>
   );
 };

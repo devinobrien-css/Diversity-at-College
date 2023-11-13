@@ -55,7 +55,7 @@ interface ProfileProps {
 }
 const Profile = ({ image, full_name, description }: ProfileProps) => {
   return (
-    <div className="mx-auto flex w-1/5 flex-col gap-y-2">
+    <div className="xs:min-w-[220px] mx-auto flex max-w-xs flex-col gap-y-2 sm:w-1/3 md:w-1/5">
       <img src={`/assets/img/${image}`} className="" />
       <p className="font-poppins font-extrabold text-gray-600">{full_name}</p>
       <p className="font-nunito text-gray-600">{description}</p>
@@ -67,9 +67,11 @@ export const People = () => {
   return (
     <div className="bg-paper p-12" id="people">
       <Element name="people" />
-      <h2 className="p-2 text-center text-32 text-black">ABOUT THE AUTHORS</h2>
+      <h2 className="font-nunito p-2 text-center text-32 text-black">
+        ABOUT THE AUTHORS
+      </h2>
       <hr className="border-red mx-auto w-24 border-2" />
-      <div className="flex flex-wrap gap-6 p-8">
+      <div className="flex flex-wrap gap-6 py-8 sm:p-8">
         {people.map((person) => (
           <Profile {...person} />
         ))}

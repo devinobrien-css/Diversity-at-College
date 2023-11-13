@@ -1,8 +1,7 @@
 import { Icon } from '@iconify/react';
 import { DiversitySvg } from '../../shared/components/assets/DiversitySvg';
-import { useState } from 'react';
 import cx from 'classnames';
-import { Element, Link } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { MobileNavbar } from './MobileNavbar';
 import { router } from './router';
 
@@ -22,7 +21,6 @@ export const Navbar = () => {
       className={cx('navbar sticky top-0 ', 'bg-white shadow md:p-6')}
       id="navbar"
     >
-      <Element name="home" />
       <div className="flex w-full justify-between">
         <DiversitySvg className="py-2 md:w-1/3" />
 
