@@ -28,19 +28,25 @@ export const MobileNavbar = () => {
           className=" flex w-full justify-between gap-x-2"
           onClick={() => setNavOpen(false)}
         >
-          <DiversitySvg className="my-auto w-full" />
+          <DiversitySvg className="my-auto w-full py-2" />
           <Icon
             icon="mdi:close"
-            width="40"
-            className="hover:bg-lightgrey my-auto rounded-lg p-2"
+            width="44"
+            className="hover:bg-lightgrey my-auto rounded-lg"
           />
         </button>
         {router.map((tab) => {
           const { id, name, Delimeter, ...rest } = tab;
           return (
             <>
-              <Link smooth={true} to={id} className="cursor-pointer" {...rest}>
-                <a className="text-black">{name}</a>
+              <Link
+                smooth={true}
+                to={id}
+                className="cursor-pointer"
+                {...rest}
+                onClick={() => setNavOpen(false)}
+              >
+                <a className="font-caveat text-black">{name}</a>
               </Link>
               <Delimeter />
             </>
