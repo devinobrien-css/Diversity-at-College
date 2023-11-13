@@ -37,7 +37,7 @@ export const Info = () => {
                   width="36"
                   className="text-red my-auto"
                 />
-                <p className="text-red my-auto text-28 font-bold">
+                <p className="text-red my-auto text-24 font-bold sm:text-28">
                   IMPLICIT BIAS.
                 </p>
               </div>
@@ -66,7 +66,7 @@ export const Info = () => {
                   width="36"
                   className="text-green my-auto"
                 />
-                <p className="text-green my-auto text-28 font-bold">
+                <p className="text-green my-auto text-24 font-bold sm:text-28">
                   SELF-HANDICAPPING.
                 </p>
               </div>
@@ -95,7 +95,7 @@ export const Info = () => {
                   width="36"
                   className="text-tan my-auto"
                 />
-                <p className="text-tan my-auto text-28 font-bold">
+                <p className="text-tan my-auto text-24 font-bold sm:text-28">
                   PEER SUPPORT.
                 </p>
               </div>
@@ -124,7 +124,7 @@ export const Info = () => {
                   width="36"
                   className="text-yellow my-auto"
                 />
-                <p className="text-yellow my-auto text-28 font-bold">
+                <p className="text-yellow my-auto text-24 font-bold sm:text-28">
                   IN-GROUP/OUT-GROUP.
                 </p>
               </div>
@@ -153,7 +153,7 @@ export const Info = () => {
                   width="36"
                   className="my-auto text-gray-700"
                 />
-                <p className="my-auto text-28 font-bold text-gray-700">
+                <p className="my-auto text-24 font-bold text-gray-700 sm:text-28">
                   STEREOTYPE THREAT.
                 </p>
               </div>
