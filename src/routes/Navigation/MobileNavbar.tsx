@@ -49,7 +49,7 @@ export const MobileNavbar = () => {
                 {...rest}
                 onClick={() => setNavOpen(false)}
               >
-                <a className="font-caveat text-black">{name}</a>
+                <a className="font-caveat text-24 text-black">{name}</a>
               </Link>
               <Delimeter />
             </>
