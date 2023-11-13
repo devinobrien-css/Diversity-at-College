@@ -9,7 +9,10 @@ export const MobileNavbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   return (
     <>
-      <button className="md:hidden" onClick={() => setNavOpen(!navOpen)}>
+      <button
+        className="fixed bottom-0 right-0 m-4 rounded-full bg-white p-2 shadow-lg transition hover:scale-105 md:hidden"
+        onClick={() => setNavOpen(!navOpen)}
+      >
         <Icon icon="mdi:menu" width="44" />
       </button>
       <div
