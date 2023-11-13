@@ -69,12 +69,12 @@ export const MobileNavbar = () => {
           })}
         </div>
 
-        <Icon
-          icon="mdi:close"
-          width="60"
+        <button
           onClick={() => setNavOpen(false)}
           className="fixed bottom-0 right-0 m-4 rounded-full bg-white p-2 shadow-xl transition hover:scale-105"
-        />
+        >
+          <Icon icon="mdi:close" width="60" />
+        </button>
 
         <ScrollToTop onClick={() => setNavOpen(false)} />
       </div>

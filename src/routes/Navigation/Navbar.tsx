@@ -1,4 +1,3 @@
-import { Icon } from '@iconify/react';
 import { DiversitySvg } from '../../shared/components/assets/DiversitySvg';
 import cx from 'classnames';
 import { Link } from 'react-scroll';
