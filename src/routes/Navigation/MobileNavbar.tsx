@@ -18,7 +18,7 @@ const ScrollToTop = ({ onClick }: ScrollToTopProps) => {
       onClick={onClick}
       offset={-60}
     >
-      <a className="fixed bottom-0 right-16 m-4 rounded-full bg-white p-2 shadow-lg transition hover:scale-105">
+      <a className="fixed bottom-0 right-16 m-4 rounded-full bg-white p-2 transition hover:scale-105">
         <Icon icon="mdi:chevron-up" width="44" />
       </a>
     </Link>
@@ -30,7 +30,7 @@ export const MobileNavbar = () => {
   return (
     <>
       <button
-        className="fixed bottom-0 right-0 m-4 rounded-full bg-white p-2 shadow-lg transition hover:scale-105 md:hidden"
+        className="fixed bottom-0 right-0 m-4 rounded-full bg-white p-2 transition hover:scale-105 md:hidden"
         onClick={() => setNavOpen(!navOpen)}
       >
         <Icon icon="mdi:menu" width="44" />
