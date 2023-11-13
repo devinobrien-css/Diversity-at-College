@@ -14,13 +14,13 @@ export const router = [
   {
     name: 'SUBSCRIBE',
     id: 'subscribe',
-    offset: -60,
+    offset: -100,
     Delimeter: () => <hr className="border-green w-1/3 border-4" />,
   },
   {
     name: 'AUTHORS',
     id: 'people',
-    offset: -60,
+    offset: -100,
     Delimeter: () => <hr className="border-tan w-1/3 border-4" />,
   },
   {
