@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { Element } from 'react-scroll';
 
 export const Subscribe = () => {
   const [email, setEmail] = useState('');
   return (
     <div className="bg-green p-12" id="subscribe">
+      <Element name="subscribe" />
       <h2 className="text-center text-24 font-bold text-white">
         SUBSCRIBE NOW
       </h2>

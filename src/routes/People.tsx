@@ -1,3 +1,5 @@
+import { Element } from 'react-scroll';
+
 const people: ProfileProps[] = [
   {
     image: 'James.jpg',
@@ -64,6 +66,7 @@ const Profile = ({ image, full_name, description }: ProfileProps) => {
 export const People = () => {
   return (
     <div className="bg-paper p-12" id="people">
+      <Element name="people" />
       <h2 className="p-2 text-center text-32 text-black">ABOUT THE AUTHORS</h2>
       <hr className="border-red mx-auto w-24 border-2" />
       <div className="flex flex-wrap gap-6 p-8">

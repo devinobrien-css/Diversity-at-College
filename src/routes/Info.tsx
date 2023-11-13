@@ -1,22 +1,34 @@
 import { Icon } from '@iconify/react';
+import { Element } from 'react-scroll';
+import cx from 'classnames';
 
 export const Info = () => {
   return (
-    <div className="bg-lightgrey px-24 py-8" id="about">
-      <div>
-        <p className="text-center text-24 font-bold">
+    <div
+      className={cx('bg-lightgrey px-4 py-0', 'lg:py-8 xl:px-24')}
+      id="about"
+    >
+      <Element name="about" />
+      <div className={cx('py-8 md:py-8')}>
+        <p
+          className={cx(
+            'transition-all',
+            'flex flex-col justify-center gap-x-2  text-20 sm:text-48 ',
+            'text-center font-bold sm:text-32  md:flex-row md:text-24',
+          )}
+        >
           <span className="text-red">FIVE REVEALING STORES. </span>
           <span className="text-green"> REAL STUDENT EXPERIENCES.</span>
         </p>
-        <p className="font-poppins text-center text-20 font-semibold text-black">
+        <p className="font-caveat text-center text-gray-800 transition-width md:text-20 md:font-semibold">
           A ROADMAP TO TEACHING AND LEARNING DIVERSITY FOR THE NEXT GENERATION.
         </p>
       </div>
 
-      <div className="flex">
+      <div className="flex flex-wrap pb-8 sm:py-12 lg:flex-nowrap lg:p-0">
         <img
           src="/assets/img/book-back.png"
-          className="mx-auto w-1/2 object-cover p-8"
+          className="mx-auto object-cover p-8 md:w-1/2"
         />
 
         <div className="my-auto flex flex-col gap-y-4">
@@ -40,7 +52,11 @@ export const Info = () => {
               <li>
                 Beny was one of the only people of color in the Philosophy
                 department. Why should only old white dudes get to be
-                philosophers? Read Beny's story in Chapter 2!
+                philosophers?
+                <br />
+                <span className="text-red rounded px-1 font-semibold shadow">
+                  Read Beny's story in Chapter 2!
+                </span>
               </li>
             </ul>
           </div>
@@ -65,8 +81,11 @@ export const Info = () => {
               </li>
               <li>
                 Rachel wanted to study medicine, but an offhand comment brought
-                on feelings of self-doubt. How did she overcome it? Read
-                Rachel's story in Chapter 3!
+                on feelings of self-doubt. How did she overcome it?
+                <br />
+                <span className="text-green rounded px-1 font-semibold shadow">
+                  Read Rachel's story in Chapter 3!
+                </span>
               </li>
             </ul>
           </div>
@@ -90,8 +109,11 @@ export const Info = () => {
               </li>
               <li>
                 Chrisel's entry into college life was shaped by the Educational
-                Opportunity Program. How has it helped her succeed? Read
-                Chrisel's story in Chapter 4!
+                Opportunity Program. How has it helped her succeed?
+                <br />
+                <span className="text-tan rounded px-1 font-semibold shadow">
+                  Read Chrisel's story in Chapter 4!
+                </span>
               </li>
             </ul>
           </div>
@@ -116,8 +138,11 @@ export const Info = () => {
               </li>
               <li>
                 When Marc got to college, he found himself to be a little fish
-                in a big pond. Where would he find his people? Read Marc's story
-                in Chapter 5!
+                in a big pond. Where would he find his people?
+                <br />
+                <span className="text-yellow rounded px-1 font-semibold shadow">
+                  Read Marc's story in Chapter 5!
+                </span>
               </li>
             </ul>
           </div>
@@ -127,9 +152,9 @@ export const Info = () => {
               <Icon
                 icon="fa6-solid:people-pulling"
                 width="36"
-                className="my-auto text-black"
+                className="my-auto text-gray-700"
               />
-              <p className="my-auto text-28 font-bold text-black">
+              <p className="my-auto text-28 font-bold text-gray-700">
                 STEREOTYPE THREAT.
               </p>
             </div>
@@ -142,7 +167,11 @@ export const Info = () => {
               <li>
                 Agata came to the US from Poland as a teenager and had to build
                 her new life from the ground up in English. Did she let that
-                stop her? Read Agata's story in Chapter 6!
+                stop her?
+                <br />
+                <span className="rounded px-1 font-semibold text-gray-700 shadow">
+                  Read Agata's story in Chapter 6!
+                </span>
               </li>
             </ul>
           </div>

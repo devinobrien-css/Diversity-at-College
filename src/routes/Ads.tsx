@@ -1,6 +1,6 @@
 export const Ads = () => {
   return (
-    <div className="bg-red flex gap-x-2 p-10">
+    <div className="bg-red flex gap-x-2 p-2 md:p-10">
       <a href="">
         <img src="/assets/img/target.png" className="w-min" />
       </a>

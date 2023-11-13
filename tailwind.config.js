@@ -4,10 +4,11 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './node_modules/flowbite/**/*.js'],
   theme: {
     screens: {
-      sm: '640px',
-      md: '1000px',
-      lg: '1024px',
-      xl: '1280px',
+      xs: '450px',
+      sm: '650px',
+      md: '1050px',
+      lg: '1250px',
+      xl: '1475px',
       '2xl': '1536px',
     },
     fontSize: {
