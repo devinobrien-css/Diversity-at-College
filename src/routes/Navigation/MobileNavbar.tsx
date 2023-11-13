@@ -14,13 +14,11 @@ const ScrollToTop = ({ onClick }: ScrollToTopProps) => {
     <Link
       smooth={true}
       to="home"
-      className="cursor-pointer"
+      className="fixed bottom-0 right-16 m-4 cursor-pointer rounded-full bg-white p-2 shadow-xl transition hover:scale-105"
       onClick={onClick}
       offset={-60}
     >
-      <a className="fixed bottom-0 right-16 m-4 rounded-full bg-white p-2 transition hover:scale-105">
-        <Icon icon="mdi:chevron-up" width="44" />
-      </a>
+      <Icon icon="mdi:chevron-up" width="44" />
     </Link>
   );
 };
@@ -70,16 +68,14 @@ export const MobileNavbar = () => {
             );
           })}
         </div>
-        <button
-          className=" flex w-full justify-between gap-x-2"
+
+        <Icon
+          icon="mdi:close"
+          width="60"
           onClick={() => setNavOpen(false)}
-        >
-          <Icon
-            icon="mdi:close"
-            width="60"
-            className="fixed bottom-0 right-0 m-4 rounded-full bg-white p-2 shadow-xl transition hover:scale-105"
-          />
-        </button>
+          className="fixed bottom-0 right-0 m-4 rounded-full bg-white p-2 shadow-xl transition hover:scale-105"
+        />
+
         <ScrollToTop onClick={() => setNavOpen(false)} />
       </div>
     </>
