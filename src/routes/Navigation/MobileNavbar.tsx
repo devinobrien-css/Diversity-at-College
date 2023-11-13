@@ -5,35 +5,10 @@ import { useState } from 'react';
 import { router } from './router';
 import { Link } from 'react-scroll';
 
-interface ScrollToTopProps {
-  onClick?: () => void;
-}
-
-const ScrollToTop = ({ onClick }: ScrollToTopProps) => {
-  return (
-    <Link
-      smooth={true}
-      to="home"
-      className="fixed bottom-0 right-16 m-4 cursor-pointer rounded-full bg-white p-2 shadow-xl transition hover:scale-105"
-      onClick={onClick}
-      offset={-60}
-    >
-      <Icon icon="mdi:chevron-up" width="44" />
-    </Link>
-  );
-};
-
 export const MobileNavbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   return (
     <>
-      <button
-        className="fixed bottom-0 right-0 m-4 rounded-full bg-white p-2 transition hover:scale-105 md:hidden"
-        onClick={() => setNavOpen(!navOpen)}
-      >
-        <Icon icon="mdi:menu" width="44" />
-      </button>
-
       <div
         className={cx(
           'fixed left-0 top-0 z-50 h-screen w-screen',
@@ -73,11 +48,25 @@ export const MobileNavbar = () => {
           onClick={() => setNavOpen(false)}
           className="fixed bottom-0 right-0 m-4 rounded-full bg-white p-2 shadow-xl transition hover:scale-105"
         >
-          <Icon icon="mdi:close" width="60" />
+          <Icon icon="mdi:close" width="44" />
         </button>
 
-        <ScrollToTop onClick={() => setNavOpen(false)} />
+        <Link
+          smooth={true}
+          to="home"
+          className="fixed bottom-0 right-16 m-4 cursor-pointer rounded-full bg-white p-2 shadow-xl transition hover:scale-105"
+          onClick={() => setNavOpen(false)}
+          offset={-60}
+        >
+          <Icon icon="mdi:chevron-up" width="44" />
+        </Link>
       </div>
+      <button
+        className="fixed bottom-0 right-0 m-4 rounded-full bg-white p-2 transition hover:scale-105 md:hidden"
+        onClick={() => setNavOpen(!navOpen)}
+      >
+        <Icon icon="mdi:menu" width="44" />
+      </button>
     </>
   );
 };
