@@ -5,16 +5,6 @@ import { Link } from 'react-scroll';
 import { MobileNavbar } from './MobileNavbar';
 import { router } from './router';
 
-const ScrollToTop = () => {
-  return (
-    <Link smooth={true} to="home" className="cursor-pointer">
-      <a className="fixed bottom-16 right-0 m-4 rounded-full bg-white p-2 shadow-lg transition hover:scale-105">
-        <Icon icon="mdi:chevron-up" width="44" />
-      </a>
-    </Link>
-  );
-};
-
 export const Navbar = () => {
   return (
     <>
@@ -42,7 +32,6 @@ export const Navbar = () => {
         </div>
       </nav>
       <MobileNavbar />
-      <ScrollToTop />
     </>
   );
 };
