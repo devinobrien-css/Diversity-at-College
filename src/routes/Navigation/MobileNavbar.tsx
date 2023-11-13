@@ -15,9 +15,10 @@ export const MobileNavbar = () => {
       >
         <Icon icon="mdi:menu" width="44" />
       </button>
+
       <div
         className={cx(
-          'absolute left-0 top-0 z-50 h-screen w-full ',
+          'fixed left-0 top-0 z-50 h-screen w-screen',
           'transition-all duration-500 ease-in-out',
           'bg-white p-6',
           'flex flex-col gap-y-6',
@@ -38,23 +39,27 @@ export const MobileNavbar = () => {
             className="fixed bottom-0 right-0 m-4 rounded-full bg-white p-2 shadow-xl transition hover:scale-105"
           />
         </button>
-        {router.map((tab) => {
-          const { id, name, Delimeter, ...rest } = tab;
-          return (
-            <>
-              <Link
-                smooth={true}
-                to={id}
-                className="cursor-pointer"
-                {...rest}
-                onClick={() => setNavOpen(false)}
-              >
-                <a className="font-caveat text-24 text-black">{name}</a>
-              </Link>
-              <Delimeter />
-            </>
-          );
-        })}
+        <div className=" flex w-full flex-col items-center justify-between gap-y-6">
+          {router.map((tab) => {
+            const { id, name, Delimeter, ...rest } = tab;
+            return (
+              <>
+                <Link
+                  smooth={true}
+                  to={id}
+                  className="cursor-pointer"
+                  {...rest}
+                  onClick={() => setNavOpen(false)}
+                >
+                  <a className="font-caveat mx-auto text-center text-24 text-black">
+                    {name}
+                  </a>
+                </Link>
+                <Delimeter />
+              </>
+            );
+          })}
+        </div>
       </div>
     </>
   );
